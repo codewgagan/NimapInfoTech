@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="password" value="nimap321"/>
+    <parameter name="mobile_no" value="9321630298"/>
+    <classes>
+      <class name="com.qa.nimap.TestCases.PunchInTestCase">
+        <methods>
+          <include name="tearDown"/>
+          <include name="punchIn"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.qa.nimap.TestCases.PunchInTestCase -->
+      <class name="com.qa.nimap.TestCases.LoginTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="loginNimap" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.qa.nimap.TestCases.LoginTest -->
+      <class name="com.qa.nimap.TestCases.AddCustomerTestCase">
+        <methods>
+          <include name="verifyCust"/>
+          <include name="signUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.qa.nimap.TestCases.AddCustomerTestCase -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
